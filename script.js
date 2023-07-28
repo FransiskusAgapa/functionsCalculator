@@ -99,7 +99,7 @@ function calculate() {
   } else if (popOp == "/") {
     console.log("Divide");
     console.log(`leftVal / rightVal =`, leftVal / rightVal);
-    displayVal.innerText = leftVal / rightVal;
+    displayVal.innerText = Math.round(leftVal / rightVal);
     leftVal = Number(displayVal.innerText);
     bannedVal = displayVal.innerText;
   }
